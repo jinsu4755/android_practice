@@ -1,0 +1,64 @@
+# AndroidPrac1
+
+> 해당 예제에서는 디자인 편의성을 위해서 LinearLayout을 사용한다.
+>
+> LinearLayout을 사용할때는 orientation을 지정해서 방향을 지정해야한다.
+
+### TextView
+
+textView는 안드로이드 UI 구성에서 화면에 text를 표시하는 기능을 담당한다.
+
+연관 기능으로 button과 editText의 부모 클래스이기도 하다.
+
+기본 설정
+
+```xml
+android:layout_width="match_parent"
+```
+
+넓이를 부모의 길이와 matching 시킨다.
+
+```xml
+android:layout_height="wrap_content"
+```
+
+높이를 해당 컨탠츠 높이만큼지정한다.
+
+
+
+이 외로 margin과 padding설정을 따로 줄 수 있다.
+
+또한 text color, text size도 지정가능하다.
+
+---
+
+### JAVA 소스에서 TextView의 변경
+
+```java
+// MainActivity.java -> onCreate() 함수
+@Override
+    protected void onCreate(Bundle savedInstanceState) {
+        //... 코드
+        TextView textView1 = (TextView) findViewById(R.id.text1) ;
+        textView1.setText("change") ;
+    }
+```
+
+TextView 형태 textview1에 View에서 id값을 참조하여 text1인 view를 TextView로 캐스팅하여 객체로 사용할 수 있다.
+
+---
+
+#### 크기 설정시
+
+dimension (치수) 단위 사용가능 : px, dp, sp, in, mm
+
+scaled pixel 단위 사용을 권장. sp 사용 권장
+
+**권장이유?**
+
+sp 단위를 사용할 경우 안드로이드 내부에서 글꼴 크기 설정시 자동으로 텍스트 크기가  조정(Scaled) 되지만
+
+dp 치수 단위 설정시 고정값으로 나오게 된다.
+
+> 고정 글씨 크기가 아닌이상은 sp 단위 사용 
+

@@ -1,0 +1,14 @@
+# AndroidPrac2
+
+> 예제
+
+### EditText
+
+EditText는 사용자가 텍스트 입력 기능을 제공하는 View위젯,
+
+TextView가 html의 p태그라면 EditText는 input 태그와 같은 역할을 한다.
+
+> EditText와 관계없이 id와 Text, hint등의 설정이 가능하다.
+
+TextView를 상속받은 View 위젯이므로 TextView가 가진 속성의 대부분을 그래도 사용할 수 있다.
+

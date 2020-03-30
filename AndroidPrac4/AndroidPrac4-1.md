@@ -1,0 +1,68 @@
+# AndroidPrac4-1
+
+### ImageView
+
+View를 상속하며 TextView가 텍스트를 표시하면 ImageView는 이미지를 표시한다.
+
+기본적 사용법은 다른 것과 다를바 없다.
+
+주로 res/mipmap or drawable에 이미지 파일들을 넣어서 해당 폴더에서 이미지를 끌어와 보여준다.
+
+
+
+### Toest
+
+짧게 사용자에게 메시지 형식으로 전달하는 팝업
+
+```java
+Toast.makeText(getApplicationContext(), "hello", Toast.LENGTH_SHORT).show();
+```
+
+위와 같이 사용하며 현재 Context 정보와 Toast 메시지, 얼마나 보여줄것인가 를 넣고 보여줄 수 있다.
+
+| 인자 값            | 설명                   |
+| ------------------ | ---------------------- |
+| Toast.LENGTH_SHORT | 짧게 Toast 메시지 표시 |
+| Toast.LENGTH_LONG  | 길게 Toast 메시지 표시 |
+
+
+
+레이아웃 형식으로 toast_layout.xml에 TextView 형식으로 만들어서
+
+```java
+LayoutInflater inflater = getLayoutInflater(); 
+View layout = inflater.inflate(R.layout.toast_layout, (ViewGroup)findViewById(R.id.toast_container));
+//inflate로 레이아웃 id와 루트를 받아서
+//LayoutInflater로 getLayoutInflater()로 View 객체 인스턴스화
+
+Toast toast = new Toast(getApplicationContext());
+toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
+toast.setDuration(Toast.LENGTH_LONG);
+toast.setView(layout);
+toast.show();
+```
+
+위와 같이 보여줄 수 있다.
+
+toast_layout은 아래와 같다.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Custom Toast test"
+        android:textColor="@color/colorPrimaryDark"
+         />
+
+</LinearLayout>
+```
+

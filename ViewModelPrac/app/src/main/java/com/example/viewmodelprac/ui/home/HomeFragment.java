@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.viewmodelprac.R;
 
 public class HomeFragment extends Fragment {
+    //test
 
     private HomeViewModel homeViewModel;
 

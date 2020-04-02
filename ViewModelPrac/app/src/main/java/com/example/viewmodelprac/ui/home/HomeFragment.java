@@ -16,6 +16,9 @@ import com.example.viewmodelprac.R;
 
 public class HomeFragment extends Fragment {
 
+    //test2
+    //test
+
     private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,

@@ -1,6 +1,8 @@
 package com.antilog.donttouchmeapp
 
+import android.content.Intent
 import android.media.MediaPlayer
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -14,6 +16,12 @@ class MainActivity : AppCompatActivity() {
         btn_doNotTouchButton.setOnClickListener {
             val soundFile: MediaPlayer = MediaPlayer.create(this, R.raw.ah)
             soundFile.start()
+        }
+
+        callButton.setOnClickListener {
+            val intentVal = Intent(Intent.ACTION_DIAL)
+            intentVal.data = Uri.parse("tel:112")
+            startActivity(intentVal)
         }
     }
 }

@@ -3,6 +3,8 @@ package com.antilog.githubapi
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -13,6 +15,8 @@ import kotlin.math.log
 class MainActivity : AppCompatActivity() {
 
     val BASE_URL = "https://api.github.com/search/"
+
+    val arr = ArrayList<String>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,11 +49,20 @@ class MainActivity : AppCompatActivity() {
 
                 for(str : UserInfo in response.body()?.items!!){
                     Log.e("MainActivity", str.login)
+                    arr.add(str.login)
                 }
+                val list_adapter = MainListAdapter(this@MainActivity, arr)
+                listview_api_id.adapter = list_adapter
+
+
 
             }
 
         })
+
+        listview_api_id.setOnItemClickListener{parent, view, position, id ->
+            Toast.makeText(this@MainActivity, arr.get(position), Toast.LENGTH_SHORT).show()
+        }
 
 
     }

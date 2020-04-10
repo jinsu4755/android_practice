@@ -36,5 +36,9 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
+    // https://mvnrepository.com/artifact/com.squareup.picasso/picasso
+    // 안드로이드에서 url src를 넣어주는 라이브러리
+    implementation group: 'com.squareup.picasso', name: 'picasso', version: '2.71828'
+
 
 }

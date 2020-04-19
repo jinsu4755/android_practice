@@ -6,6 +6,20 @@
 
 [정리 폴더](/AndroidStudyMd)
 
+
+
+## [SOPT] Semina
+
+SOPT 세미나 참석후 세미나 실습 과정을 정리하였습니다.
+
+
+
+## [SOPT] Semina Task
+
+세미나 이전 과제, 이후 과제를 정리합니다.
+
+
+
 ## AndroidWithKotlin
 
 > 2020.04.03 기점으로 Kotilin으로 학습하기 시작하였습니다.

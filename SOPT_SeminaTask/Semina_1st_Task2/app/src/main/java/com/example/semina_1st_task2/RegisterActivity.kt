@@ -13,9 +13,12 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        intent.putExtra("id", et_register_id.text.toString())
-        intent.putExtra("pw", et_register_pw.text.toString())
-        setResult(Activity.RESULT_OK, intent)
-        finish()
+        btn_register_end.setOnClickListener {
+            val intent = Intent()
+            intent.putExtra("id", et_register_id.text.toString())
+            intent.putExtra("pw", et_register_pw.text.toString())
+            setResult(Activity.RESULT_OK, intent)
+            finish()
+        }
     }
 }

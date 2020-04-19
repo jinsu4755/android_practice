@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:hint="아이디를 입력하세요"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:layout_editor_absoluteX="16dp" />
 
@@ -35,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호를 입력하세요"
+        android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@+id/et_register_id"
         tools:layout_editor_absoluteX="36dp" />
 

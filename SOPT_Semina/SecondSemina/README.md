@@ -1,3 +1,3 @@
 # SOPT 2차 세미나 실습
 
-<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2FYtfmB%2FbtqDQ9d7459%2FaLKbzS4kzM2ytNHeKFAxr0%2Fimg.gif?raw=true" width="40%" height="40%">
+![](https://github.com/jinsu4755/android_practice/blob/master/SOPT_Semina/SecondSemina/%EC%8B%A4%EC%8A%B5%ED%99%94%EB%A9%B4.gif?raw=true)

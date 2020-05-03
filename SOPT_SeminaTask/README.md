@@ -8,4 +8,6 @@
 | [Semina_1st_Task2](https://github.com/jinsu4755/android_practice/tree/master/SOPT_SeminaTask/Semina_1st_Task2) | 필수 | **[기본 과제2] 회원가입 및 로그인 기능 구현하기**<br>회원가입 완료시 LoginActivity로 돌아오고, 회원가입 성공한 id와 pw가 입력되어 있도록 구현. |
 | [Semina_1st_TaskPlus2](https://github.com/jinsu4755/android_practice/tree/master/SOPT_SeminaTask/Semina_1st_TaskPlus2) | 선택 | **[성장 과제2] 자동 로그인 구현하기**<br>회원가입시 LoginActivity로 돌아와 가입한 id,pw로 자동 로그인 하기, 로그인 하여 MainActivity로 간 경우 앱을 종료했다가 다시 켜면 LoginActivity에서 자동 로그인 하기 |
 | [Semina_1st_before_task](https://github.com/jinsu4755/android_practice/tree/master/SOPT_SeminaTask/Semina_1st_before_task) | 사전 | 프로젝트 만들고 앱 실행시켜보기                              |
+| [Semina_2nd_Task1](https://github.com/jinsu4755/android_practice/tree/master/SOPT_SeminaTask/Semina_2nd_Task1) | 필수 | **[기본 과제 1]Bottom Navigation, ViewPager, RecyclerView 이용해서 직접 실습 해보기!** |
+| [Semina_2nd_Task2](https://github.com/jinsu4755/android_practice/tree/master/SOPT_SeminaTask/Semina_2nd_Task2) | 필수 |                                                              |
 

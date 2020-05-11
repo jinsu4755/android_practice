@@ -15,4 +15,5 @@ interface RequestInterface {
 
     @POST("/user/signup")
     fun requestRegister(@Body body: RequestRegister) : Call<ResponseRegister>
+
 }

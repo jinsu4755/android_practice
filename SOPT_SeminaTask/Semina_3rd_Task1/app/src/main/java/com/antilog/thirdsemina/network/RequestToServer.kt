@@ -16,5 +16,6 @@ object RequestToServer {
 
     //service  = requestInterface
     //retrofit 객체의 create 호출, interface 클래스 타입을 넘겨 실제 구현체를 만든다.
+
     var service: RequestInterface = retrofit.create(RequestInterface::class.java)
 }

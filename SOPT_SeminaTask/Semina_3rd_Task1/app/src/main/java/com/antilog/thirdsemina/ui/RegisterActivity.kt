@@ -101,4 +101,3 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         return false
     }
 }
-

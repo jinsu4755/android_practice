@@ -1,15 +1,12 @@
-package com.antilog.semina_3rd_task2.ui
+package com.antilog.semina_3rd_task2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.antilog.semina_3rd_task2.R
 
-class LoginActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-
-        
+        setContentView(R.layout.activity_main)
     }
 }

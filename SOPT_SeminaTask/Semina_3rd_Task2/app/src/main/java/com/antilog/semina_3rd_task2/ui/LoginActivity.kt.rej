@@ -1,0 +1,9 @@
+diff a/SOPT_SeminaTask/Semina_3rd_Task2/app/src/main/java/com/antilog/semina_3rd_task2/ui/LoginActivity.kt b/SOPT_SeminaTask/Semina_3rd_Task2/app/src/main/java/com/antilog/semina_3rd_task2/ui/LoginActivity.kt	(rejected hunks)
+@@ -20,6 +20,7 @@
+         btn_login.setOnClickListener {
+             val intent = Intent(this, MainActivity::class.java)
+             startActivity(intent)
++            finish()
+         }
+     }
+ }
